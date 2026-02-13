@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Cars | CarShow</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    .hero {
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+      url("https://images.unsplash.com/photo-1503736334956-4c8f8e92946d") center/cover no-repeat;
+      padding: 120px 0 80px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .image {
+      height:90vh;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .image img {
+      transition: transform .4s ease;
+    }
+
+    .image img:hover {
+      transform: scale(1.2);
+    }
+
+    .model-card {
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all .3s ease;
+    }
+
+    .model-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,.15);
+    }
+
+    .model-card img {
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .rating i {
+      color: #f4c150;
+    }
+
+    .feature {
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: .3s;
+    }
+
+    .feature:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">CarShow</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="types.html">Types</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Sports Cars – Built for Thrill</h1>
+    <p class="lead">Precision engineering, extreme performance, pure adrenaline</p>
+  </div>
+</section>
+
+
+<!-- INTRO -->
+<div class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <h2 class="fw-bold mb-3">Why Choose a Sports Car?</h2>
+<p>
+  Sports cars are designed for speed, agility, and an unmatched driving experience.
+  With powerful engines, aerodynamic bodies, and razor-sharp handling, they deliver
+  pure excitement every time you hit the road.
+</p>
+
+<p>
+  Built with performance at their core, sports cars feature advanced suspension systems,
+  lightweight materials, and precision engineering inspired by professional racing.
+  Every curve, every acceleration, and every gear shift is crafted to thrill the driver.
+</p>
+
+<p>
+  Beyond performance, modern sports cars offer luxurious interiors, cutting-edge
+  infotainment systems, and advanced safety technologies. Premium materials, ergonomic
+  seating, and driver-focused cockpits ensure comfort without compromising speed.
+</p>
+
+<p>
+  Whether you're cruising on highways or pushing limits on winding roads, a sports car
+  delivers an emotional connection that ordinary cars simply can’t match. It’s not just
+  about transportation — it’s about passion, performance, and pride of ownership.
+</p>
+
+    </div>
+    <div class="col-md-6 image">
+      <img src="images/img/sports3.jpg" class="img-fluid">
+    </div>
+  </div>
+</div>
+
+<!-- POPULAR MODELS -->
+<section class="container my-5">
+  <h2 class="text-center mb-2">Elite Pro Sports Cars</h2>
+  <p class="text-center text-muted mb-5">Top-rated performance machines</p>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card model-card border-0 shadow-sm">
+        <img src="images/img/sports1.jpg">
+        <div class="card-body text-center">
+          <h5>Porsche Panamera</h5>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="text-muted">Luxury meets race-bred performance</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card model-card border-0 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d">
+        <div class="card-body text-center">
+          <h5>BMW M5 Competition</h5>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-muted">Executive sedan with supercar DNA</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card model-card border-0 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1542362567-b07e54358753">
+        <div class="card-body text-center">
+          <h5>Audi RS7</h5>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="text-muted">Aggressive design with quattro power</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="container-fluid bg-light py-5">
+  <h2 class="text-center mb-5">Key Sports Car Features</h2>
+  <div class="row mx-4 g-5">
+    <div class="col-md-3 feature">
+      <i class="fa-solid fa-gauge-high fa-3x"></i>
+      <h6 class="mt-3">High Performance</h6>
+      <p>Engineered for speed and acceleration</p>
+    </div>
+    <div class="col-md-3 feature">
+      <i class="fa-solid fa-road fa-3x"></i>
+      <h6 class="mt-3">Precision Handling</h6>
+      <p>Exceptional grip and control</p>
+    </div>
+    <div class="col-md-3 feature">
+      <i class="fa-solid fa-bolt fa-3x"></i>
+      <h6 class="mt-3">Aerodynamic Design</h6>
+      <p>Optimized for performance</p>
+    </div>
+    <div class="col-md-3 feature">
+      <i class="fa-solid fa-star fa-3x"></i>
+      <h6 class="mt-3">Luxury Interiors</h6>
+      <p>Comfort with racing inspiration</p>
+    </div>
+  </div>
+</section>
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>CarShow</h5>
+        <p>Your premier destination for luxury and performance vehicles.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="types.html" class="text-white text-decoration-none">Types</a></li>
+          <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact Info</h5>
+        <p>123 Luxury Lane<br>Beverly Hills, CA 90210<br>Phone: (555) 123-4567<br>Email: info@carshow.com</p>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="text-center">
+      <p>&copy; 2024 CarShow. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

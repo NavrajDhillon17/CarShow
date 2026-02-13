@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Models - CarShow</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    .intro-text {
+      text-align: justify;
+      
+    }
+    /* ===== CAR CARD ===== */
+    .car-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      height: 55vh;
+    }
+
+    .car-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+
+    /* ===== OVERLAY ===== */
+    .car-overlay {
+      position: absolute;
+      top: 0;
+      right: -100%;
+      width: 35%;
+      height: 100%;
+      background: rgba(0,0,0,0.75);
+      color: #fff;
+      padding: 20px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      transition: right 0.4s ease;
+    }
+
+    .car-card:hover .car-overlay {
+      right: 0;
+    }
+
+    .car-overlay .btn {
+      margin-top: 12px;
+      background: #ff4d30;
+      color: white;
+      border-radius: 6px;
+      width: fit-content;
+    }
+
+    /* ===== HERO ===== */
+    .hero-models {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                  url('images/img/carbg.jpg') center/cover no-repeat;
+      color: white;
+      padding: 120px 0 80px;
+      text-align: center;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 992px) {
+      .car-card {
+        height: 45vh;
+      }
+
+      .car-overlay {
+        width: 100%;
+        height: 45%;
+        top: auto;
+        bottom: -100%;
+        right: 0;
+        transition: bottom 0.4s ease;
+      }
+
+      .car-card:hover .car-overlay {
+        bottom: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top w-100">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="#">CarShow</a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link " href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="types.html">Types</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+<!-- HERO -->
+<section class="hero-models">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Explore Car Types</h1>
+    <p class="lead">Discover luxury, performance, and innovation in every model </p>
+  </div>
+</section>
+
+<!-- TYPES SECTION -->
+<section class="container my-5">
+
+  <!-- INTRO PARAGRAPHS (NEW CONTENT) -->
+  <div class="row justify-content-center mb-5">
+  <div class="col-lg-10 intro-text">
+    <p class="lead">
+      The modern automobile industry offers a wide variety of cars, each designed to meet specific
+      driving needs and lifestyles. From powerful vehicles built for adventure to refined models
+      focused on comfort and efficiency, cars today blend performance, safety, and innovation.
+    </p>
+
+    <p>
+      Choosing the right type of car depends on factors such as road conditions, usage, fuel efficiency,
+      and personal preferences. While some cars are engineered for long journeys and family travel,
+      others prioritize speed, style, or environmental sustainability.
+    </p>
+
+    <p class="mb-0">
+      Understanding different types of cars helps buyers make informed decisions and ensures a better
+      driving experience. Below are some of the most popular car categories, each offering unique
+      features and advantages.
+    </p>
+  </div>
+</div>
+
+
+  <h2 class="text-center mb-5">Types of Cars</h2>
+
+  <div class="row g-5">
+
+    <!-- SUV -->
+    <div class="col-lg-6 col-12">
+      <p>
+        <strong>SUV –</strong>
+        SUVs are powerful vehicles with high ground clearance, ideal for rough roads and long journeys.
+      </p>
+
+      <div class="car-card">
+        <img src="images/img/suv.jpg" alt="SUV">
+        <div class="car-overlay">
+          <h3>SUV</h3>
+          <p>Powerful, spacious, and adventure-ready.</p>
+          <a href="suv.html" class="btn">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SEDAN -->
+    <div class="col-lg-6 col-12">
+      <p>
+        <strong>Sedan –</strong>
+        Sedans offer comfort, smooth driving, and a separate boot for luggage.
+      </p>
+
+      <div class="car-card">
+        <img src="images/img/sedan.jpg" alt="Sedan">
+        <div class="car-overlay">
+          <h3>Sedan</h3>
+          <p>Elegant design with everyday comfort.</p>
+          <a href="sedan.html" class="btn">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- SPORTS -->
+    <div class="col-lg-6 col-12">
+      <p>
+        <strong>Sports Car –</strong>
+        Sports cars focus on speed, performance, and thrilling driving experience.
+      </p>
+
+      <div class="car-card">
+        <img src="images/img/sports.jpg" alt="Sports Car">
+        <div class="car-overlay">
+          <h3>Sports Car</h3>
+          <p>Speed, precision, and pure excitement.</p>
+          <a href="sports.html" class="btn">View Details</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- EV -->
+    <div class="col-lg-6 col-12">
+      <p>
+        <strong>Electric Vehicle (EV) –</strong>
+        EVs are environmentally friendly cars powered by electricity, offering silent operation and low running costs.
+      </p>
+
+      <div class="car-card">
+        <img src="images/img/ev.jpg" alt="Electric Car">
+        <div class="car-overlay">
+          <h3>Electric Vehicle</h3>
+          <p>Eco-friendly with cutting-edge technology.</p>
+          <a href="ev.html" class="btn">View Details</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>CarShow</h5>
+        <p>Your premier destination for luxury and performance vehicles.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="types.html" class="text-white text-decoration-none">Types</a></li>
+          <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact Info</h5>
+        <p>
+          123 Luxury Lane<br>
+          Beverly Hills, CA 90210<br>
+          Phone: (555) 123-4567<br>
+          Email: info@carshow.com
+        </p>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="text-center">
+      <p>&copy; 2024 CarShow. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

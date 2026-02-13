@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Electric Vehicles | CarShow</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    .hero {
+      background: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+      url("images/img/evbg.webp") center/cover no-repeat;
+      padding: 120px 0 80px;
+      color: #fff;
+      text-align: center;
+    }
+
+    .model-card {
+      border-radius: 12px;
+      overflow: hidden;
+      transition: .3s;
+    }
+
+    .model-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,.15);
+    }
+
+    .model-card img {
+      height: 230px;
+      object-fit: cover;
+    }
+
+    .rating i {
+      color: #4caf50;
+    }
+    .im{
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    .im img{
+      transition: transform .4s ease;
+    }
+    .im img:hover{
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">CarShow</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="types.html">Types</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Electric Vehicles – The Future</h1>
+    <p class="lead">Clean energy, smart technology, silent power</p>
+  </div>
+</section>
+
+<div class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <h2>Why Choose an Electric Vehicle?</h2>
+
+      <p>
+        Electric vehicles offer zero tailpipe emissions, instant torque, and significantly
+        lower running costs compared to traditional fuel-powered cars. With fewer moving
+        parts, EVs require less maintenance and deliver a smooth, quiet, and vibration-free
+        driving experience.
+      </p>
+
+      <p>
+        Advanced battery technology, regenerative braking, and smart connectivity features
+        make modern EVs highly efficient and future-ready. From smartphone integration to
+        intelligent energy management, EVs redefine the way we drive.
+      </p>
+
+      <p>
+        Charging an electric vehicle has also become easier than ever. With fast-charging
+        stations, home charging solutions, and an expanding public charging network,
+        range anxiety is quickly becoming a thing of the past.
+      </p>
+
+      <p>
+        Choosing an EV isn’t just about saving money—it’s about contributing to a cleaner
+        environment, reducing carbon footprint, and supporting sustainable mobility for
+        future generations.
+      </p>
+
+      <ul class="list-unstyled mt-3">
+        <li>⚡ Instant acceleration & smooth performance</li>
+        <li>🌱 Eco-friendly & zero emissions</li>
+        <li>🔋 Low running & maintenance costs</li>
+        <li>📱 Smart features & connected technology</li>
+      </ul>
+    </div>
+
+    <div class="im col-md-6 text-center">
+      <img src="images/img/ev3.jpg" class="img-fluid rounded shadow" alt="Electric Vehicle">
+    </div>
+  </div>
+</div>
+
+<section class="container my-5">
+  <h2 class="text-center mb-2">Elite Pro EVs</h2>
+  <p class="text-center text-muted mb-5">Premium electric vehicles shaping tomorrow</p>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card model-card border-0 shadow-sm">
+        <img src="https://images.unsplash.com/photo-1617788138017-80ad40651399">
+        <div class="card-body text-center">
+          <h5>Tesla Model S</h5>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="text-muted">Performance-focused electric flagship</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card model-card border-0 shadow-sm">
+        <img src="images/img/ev1.jpg">
+        <div class="card-body text-center">
+          <h5>Mercedes EQS</h5>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-muted">Ultra-luxury electric sedan</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card model-card border-0 shadow-sm">
+        <img src="images/img/ev2.jpg">
+        <div class="card-body text-center">
+          <h5>Porsche Taycan</h5>
+          <div class="rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <p class="text-muted">Electric performance without compromise</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
+
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>CarShow</h5>
+        <p>Your premier destination for luxury and performance vehicles.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="home.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="types.html" class="text-white text-decoration-none">Types</a></li>
+          <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
+          <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact Info</h5>
+        <p>123 Luxury Lane<br>Beverly Hills, CA 90210<br>Phone: (555) 123-4567<br>Email: info@carshow.com</p>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="text-center">
+      <p>&copy; 2024 CarShow. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
